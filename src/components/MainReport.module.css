@@ -1,0 +1,59 @@
+.container { padding: 20px; font-family: 'Inter', 'Segoe UI', sans-serif; max-width: 900px; margin: 0 auto; background-color: #f4f7f6; min-height: 100vh; box-sizing: border-box; }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; background: #fff; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); margin-bottom: 25px; position: relative; }
+.userTrigger { cursor: pointer; font-weight: bold; font-size: 18px; display: flex; align-items: center; gap: 8px; user-select: none; color: #1a202c; }
+.avatarMain { width: 32px; height: 32px; border-radius: 50%; background: #667eea; color: white; display: flex; justify-content: center; align-items: center; font-size: 14px; }
+.dropdownIcon { font-size: 12px; transition: transform 0.2s; color: #a0aec0; }
+.dropdownIconOpen { transform: rotate(180deg); }
+.dropdownMenu { position: absolute; top: 60px; left: 20px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 280px; z-index: 100; overflow: hidden; }
+.dropdownList { max-height: 250px; overflow-y: auto; }
+.dropdownItem { padding: 12px 15px; display: flex; align-items: center; gap: 10px; cursor: pointer; border-bottom: 1px solid #edf2f7; }
+.dropdownItemActive { background: #f7fafc; }
+.avatarItem { width: 35px; height: 35px; border-radius: 50%; background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); color: white; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 16px; }
+.itemName { flex: 1; margin: 0; font-size: 14px; color: #2d3748; }
+.itemActiveName { font-weight: bold; }
+.checkIcon { color: #48bb78; font-weight: bold; }
+.actionAdd { padding: 15px; cursor: pointer; font-size: 14px; font-weight: 600; color: #667eea; border-bottom: 1px solid #edf2f7; text-align: center; }
+.actionLogout { padding: 15px; cursor: pointer; font-size: 14px; font-weight: 600; color: #e53e3e; text-align: center; }
+.card { background: #fff; padding: 30px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); margin-bottom: 25px; box-sizing: border-box; }
+.btnGroup { display: flex; gap: 10px; background: #edf2f7; padding: 6px; border-radius: 12px; margin-bottom: 25px; flex-wrap: wrap; }
+.activeBtn { background: #fff; color: #2d3748; border: none; padding: 10px; border-radius: 8px; cursor: pointer; flex: 1; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+.inactiveBtn { background: transparent; color: #718096; border: none; padding: 10px; flex: 1; cursor: pointer; font-weight: 600; }
+.progressWrap { display: flex; justify-content: center; margin-bottom: 10px; }
+.progressCircleBase { width: 140px; height: 140px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.innerCircle { width: 115px; height: 115px; background: #fff; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.progressH1 { margin: 0; color: #2d3748; font-size: 32px; }
+.progressLabel { color: #a0aec0; font-weight: 600; }
+.formHeading { margin: 0 0 20px 0; color: #1a202c; font-size: 20px; text-align: center; }
+.sectionCard { background: #fafbfc; padding: 20px; border-radius: 12px; border: 1px solid #eef0f2; margin-bottom: 15px; }
+.sectionTitle { margin: 0 0 15px 0; color: #2d3748; font-size: 16px; display: flex; align-items: center; gap: 8px; }
+.gridRow { display: grid; grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); gap: 10px; }
+.inputBox { width: 100%; padding: 12px; text-align: center; border-radius: 10px; border: 1px solid #cbd5e0; font-size: 15px; background: #fff; outline: none; transition: border 0.3s; box-sizing: border-box; }
+.inputBox:focus { border-color: #667eea; }
+.inputBoxGreen { background: #e6fffa; }
+.submitBtn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; width: 100%; padding: 16px; border: none; border-radius: 12px; font-size: 18px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3); transition: transform 0.2s; }
+.submitBtn:hover { transform: translateY(-2px); }
+.historyHeading { margin: 0 0 15px 0; color: #2d3748; }
+.tableWrap { overflow-x: auto; border-radius: 12px; border: 1px solid #eef0f2; }
+.table { width: 100%; border-collapse: collapse; font-size: 13px; background: #fff; min-width: 500px; }
+.th { background: #f8fafc; padding: 12px; border-bottom: 1px solid #e2e8f0; color: #4a5568; font-weight: 600; text-align: center; }
+.td { padding: 12px; border-bottom: 1px solid #e2e8f0; text-align: center; color: #2d3748; }
+.tdMissed { background-color: #fff5f5; color: #e53e3e; font-weight: bold; }
+.tdScore { color: #48bb78; font-weight: bold; }
+.emptyRow { text-align: center; padding: 20px; color: #a0aec0; }
+
+/* Responsive For Mobile & Tablet */
+@media (max-width: 768px) {
+  .container { padding: 10px; }
+  .header { padding: 15px; }
+  .userTrigger { font-size: 16px; }
+  .card { padding: 20px 15px; border-radius: 15px; margin-bottom: 15px; }
+  .sectionCard { padding: 15px; }
+  .activeBtn, .inactiveBtn { padding: 8px; font-size: 14px; }
+  .progressCircleBase { width: 120px; height: 120px; }
+  .innerCircle { width: 100px; height: 100px; }
+  .progressH1 { font-size: 24px; }
+  .sectionTitle { font-size: 15px; }
+  .inputBox { padding: 10px; font-size: 14px; }
+  .submitBtn { padding: 14px; font-size: 16px; }
+  .dropdownMenu { left: 10px; right: 10px; width: auto; }
+}

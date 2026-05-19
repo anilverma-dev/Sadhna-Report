@@ -1,0 +1,20 @@
+.container { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f4f7f6; font-family: 'Inter', 'Segoe UI', sans-serif; padding: 15px; box-sizing: border-box; }
+.card { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); width: 100%; max-width: 400px; box-sizing: border-box; }
+.heading { text-align: center; color: #1a202c; margin-bottom: 30px; font-size: 28px; }
+.inputBox { width: 100%; padding: 14px; margin-bottom: 15px; border-radius: 10px; border: 1px solid #cbd5e0; font-size: 15px; background: #fafbfc; outline: none; box-sizing: border-box; transition: border 0.3s ease; }
+.inputBox:focus { border-color: #667eea; }
+.inputLast { margin-bottom: 25px; }
+.loginBtn { width: 100%; padding: 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3); transition: transform 0.2s; }
+.loginBtn:hover { transform: translateY(-2px); }
+.adminLinkWrap { margin-top: 25px; text-align: center; }
+.adminLink { color: #667eea; text-decoration: none; font-size: 15px; font-weight: 600; }
+.footerText { margin-top: 20px; text-align: center; color: #718096; font-size: 14px; }
+.signupLink { text-decoration: none; color: #667eea; font-weight: bold; margin-left: 6px; }
+
+/* Responsive For Mobile */
+@media (max-width: 480px) {
+  .card { padding: 25px 20px; }
+  .heading { font-size: 24px; margin-bottom: 20px; }
+  .inputBox { padding: 12px; font-size: 14px; }
+  .loginBtn { padding: 14px; font-size: 15px; }
+}

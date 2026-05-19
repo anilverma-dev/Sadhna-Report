@@ -1,0 +1,40 @@
+.container { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f4f7f6; font-family: 'Inter', 'Segoe UI', sans-serif; padding: 15px; box-sizing: border-box; }
+.loginCard { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); width: 100%; max-width: 400px; text-align: center; box-sizing: border-box; }
+.heading { color: #1a202c; margin-bottom: 30px; font-size: 28px; }
+.inputBox { width: 100%; padding: 14px; margin-bottom: 25px; border-radius: 10px; border: 1px solid #cbd5e0; font-size: 15px; background: #fafbfc; outline: none; box-sizing: border-box; }
+.enterBtn { width: 100%; padding: 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 12px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3); }
+.backBtn { margin-top: 20px; background: none; border: none; color: #667eea; cursor: pointer; font-weight: bold; font-size: 14px; }
+.dashContainer { padding: 20px; font-family: 'Inter', 'Segoe UI', sans-serif; max-width: 1100px; margin: 0 auto; background-color: #f4f7f6; min-height: 100vh; box-sizing: border-box; }
+.header { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 25px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); margin-bottom: 25px; }
+.headerTitle { margin: 0; font-size: 24px; color: #1a202c; }
+.headerSub { margin: 5px 0 0 0; color: #718096; font-size: 15px; font-weight: 600; }
+.logoutBtn { padding: 12px 20px; background: #e53e3e; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 10px rgba(229, 62, 62, 0.2); }
+.tableCard { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); box-sizing: border-box; }
+.tableHeaderWrap { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #edf2f7; padding-bottom: 20px; margin-bottom: 20px; }
+.tableTitle { margin: 0; color: #2d3748; }
+.selectFilter { padding: 12px; border-radius: 10px; border: 1px solid #cbd5e0; font-weight: bold; outline: none; cursor: pointer; background: #fafbfc; }
+.emptyMessage { text-align: center; color: #a0aec0; padding: 40px; font-size: 16px; font-weight: 600; }
+.tableWrap { overflow-x: auto; border-radius: 12px; border: 1px solid #eef0f2; }
+.table { width: 100%; border-collapse: collapse; text-align: left; min-width: 600px; }
+.th { background: #f8fafc; color: #4a5568; padding: 16px; border-bottom: 1px solid #e2e8f0; }
+.tr { border-bottom: 1px solid #e2e8f0; background: #fff; }
+.td { padding: 16px; color: #718096; }
+.tdName { font-weight: bold; color: #2d3748; }
+.activeDot { display: inline-block; width: 8px; height: 8px; background: #48bb78; border-radius: 50%; margin-right: 8px; }
+.badgeWrap { padding: 16px; text-align: center; }
+.badge { background: #ebf4ff; color: #3182ce; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+.scoreGreen { color: #48bb78; font-weight: bold; font-size: 18px; }
+.scoreOrange { color: #ed8936; font-weight: bold; font-size: 18px; }
+.scoreRed { color: #e53e3e; font-weight: bold; font-size: 18px; }
+
+/* Responsive For Mobile */
+@media (max-width: 768px) {
+  .dashContainer { padding: 10px; }
+  .loginCard { padding: 25px 20px; }
+  .header { flex-direction: column; align-items: flex-start; gap: 15px; padding: 20px; }
+  .logoutBtn { width: 100%; text-align: center; }
+  .tableCard { padding: 20px 15px; }
+  .tableHeaderWrap { flex-direction: column; align-items: flex-start; gap: 15px; }
+  .selectFilter { width: 100%; }
+  .th, .td { padding: 12px 10px; font-size: 13px; }
+}

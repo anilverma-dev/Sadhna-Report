@@ -1,0 +1,28 @@
+/* FULL PAGE scroll control */
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome, Edge, Safari */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --primary: #ff9800;
+  --secondary: #4caf50;
+  --danger: #e53935;
+  --dark: #2c3e50;
+  --light: #f4f7f6;
+  --white: #ffffff;
+}
+
+body { background-color: var(--light); margin: 0; font-family: 'Poppins', sans-serif; }
+.card { background: var(--white); padding: 25px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 20px; }
+.input-field { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+.btn-primary { background: var(--primary); color: white; border: none; padding: 15px; border-radius: 10px; cursor: pointer; width: 100%; font-weight: bold; font-size: 16px; transition: 0.3s; }
+.btn-primary:hover { background: #e68a00; }
