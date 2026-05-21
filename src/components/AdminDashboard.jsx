@@ -110,7 +110,7 @@ const AdminDashboard = () => {
         </div>
 
         {students.length === 0 ? (
-          <p className={styles.emptyMessage}>Abhi aapka koi bhi student logged in nahi hai.</p>
+          <p className={styles.emptyMessage}>None of your students are currently logged in.</p>
         ) : (
           <div className={styles.tableWrap}>
             <table className={styles.table}>
